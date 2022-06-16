@@ -5,3 +5,7 @@ timer:
 latexinit:
 	ocamlopt ./ocaml/latexinit.ml -o latexinit
 	sudo mv latexinit /usr/local/bin
+
+all:
+	make time
+	make latexinit
